@@ -1,0 +1,35 @@
+html {
+  margin: auto;
+}
+
+h1 {
+  margin: 5px;
+}
+
+h4 {
+  margin: none;
+}
+
+body {
+  background-color: #FAEBD7;
+  color: #45557A;
+
+  font-family: "Garamond";
+  font-size: 1.5em;
+}
+
+ul {
+  width: 50%;
+  border: 2px solid #45557A;
+  border-radius: 5px;
+}
+
+li {
+  padding: 5px;
+  list-style: square;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

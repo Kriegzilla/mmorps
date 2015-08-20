@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper SMOrc!</title>
+    <link rel="stylesheet" href="/home.css">
+  </head>
+
+
+  Player Score: <%= session[:player_score] %>
+  Computer Score: <%= session[:ai_score] %>
+
+  <br>
+  <p>
+  <% if session[:round_winner] == "pwin" %>
+    <%= "You won that round! Get +1 point!" %>
+  <% elsif session[:round_winner] == "aiwin" %>
+    <%= "The AI won that round, gets +1 point D:" %>
+  <% elsif session[:round_winner] == "tie" %>
+    <%= "TIE ROUND! TRY AGAIN!" %>
+  <% end %>
+  </p>
+  <br>
+
+  <h4>
+  <% if session[:winner] == "player" %>
+    <%= "You're the BIG WINNER! Play again?" %>
+  <% elsif session[:winner] == "ai" %>
+    <%= "The computer beat you! Ouch. Try again?" %>
+  <% end %>
+
+  </h4>
+  <body>
+    <h1>PREPARE FOR COMBAT</h1>
+    <ul class="button-group-radius">
+      <form action="" method="post">
+        <button name="rock" value="rock">ROCK!</button>
+      </form>
+      <form action="" method="post">
+        <button name="paper" value="paper">PAPER!</button>
+      </form>
+      <form action="" method="post">
+        <button name="scissors" value="scissors">SCISSORS!</button>
+      </form>
+    </ul>
+    </form>
+  </body>
+</html>
